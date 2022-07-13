@@ -1,0 +1,28 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var pro = new Promise(function (resolve, reject) {
+            resolve("promise Sucessfully");
+            reject("are yrrr kya ho gya");
+        });
+        async function show() {
+            try {
+                var r = await pro;
+                console.log(r);
+            } catch (err) {
+                console.log(`error is ${err}`);
+            }
+        }
+        show();
+    </script>
+</body>
+
+</html>

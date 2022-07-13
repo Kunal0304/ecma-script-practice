@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select value=select onchange="show()" id="ch">
+    <option >2</option>
+    <option >5</option>
+    <option >6</option>
+    <option >1</option>
+    <option >8</option>
+    <option >9</option>
+
+    </select>
+    <script>
+        async function show() {
+            let id=document.getElementById('ch').value;
+            console.log(id);
+            var res=await fetch(`https://restapittt.herokuapp.com/products/${id}`);
+            var d=res.json();
+            var data=await d;
+            console.log(data);
+        }
+        show();
+    </script>
+</body>
+</html>

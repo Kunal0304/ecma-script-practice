@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var s1={
+            roll:101,
+            name:'ajay',
+            address:'indore'
+        };
+        var s2={
+            ...s1,
+            roll:102
+        };
+        var s3={
+            roll:103,
+            name:'jay',
+            address:'ujjain'
+        };
+        var crs={
+            cname:'java Script',
+            duration:'4 month',
+            trainer:'tanveer sir'
+        }
+
+        var data=[{...s1,...crs},{...s3,...crs}];
+        console.log(data);
+        console.log(s1);
+        console.log(s2);
+        console.log(s3);
+    </script>
+</body>
+</html>

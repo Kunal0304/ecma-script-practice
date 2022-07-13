@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ids <input type="text" name="ids" id="ids"><br><br>
+    company <input type="submit" value="delete Product" onclick="show()"/><br><br>   
+
+
+    <script>
+        async function show() {
+            var ids=document.getElementById('ids').value;
+                   let options ={
+                method:'DELETE',
+                headers:{
+                    'Content-Type':'application/json;charset=utf-8'
+                },
+            }
+            var res=await fetch(`https://restapittt.herokuapp.com/products/${ids}/`,options);
+            console.log(res);
+        }
+        show();
+    </script>
+</body>
+</html>

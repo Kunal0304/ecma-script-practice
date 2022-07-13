@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    name <input type="text" name="name" id="name"><br><br>
+    price <input type="text" name="price" id="price"><br><br> 
+    cat <input type="text" name="cat" id="cat"><br><br> 
+    company<input type="text" name="cmp" id="cmp"><br><br> 
+    company <input type="submit" value="Add Product" onclick="show()"/><br><br> 
+
+    <script>
+        async function show() {
+            let data={
+                "name":document.getElementById('name').value,
+                "price":document.getElementById('price').value,
+                "cat":document.getElementById('cat').value,
+                "cmp":document.getElementById('cmp').value
+            }
+            let options ={
+                method:'POST',
+                headers:{
+                    'Content-Type':'application/json;charset=utf-8'
+                },
+                body: JSON.stringify(data)
+            }
+            var res=await fetch("https://restapittt.herokuapp.com/products/",options);
+            console.log(res);
+        }
+        show();
+    </script>
+</body>
+</html>

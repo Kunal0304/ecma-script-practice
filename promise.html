@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var data=new Promise(function (resolve,reject) {
+
+           const a=true
+        if(!a)
+        reject("promise rejected");
+        else
+        resolve("promise resolve sucessfully");
+
+       });
+       data.then(function(val) {
+        //    console.log(val);
+           console.log("hello bhai task complete");
+       }).catch(function (err) {
+           console.log(err);
+        //    console.log("some err in code");
+
+       }) 
+    </script>
+</body>
+</html>
