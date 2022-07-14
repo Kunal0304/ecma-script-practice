@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var aa;
+        function set_time() {
+            console.log("function set_time is running")
+            let num = 0
+            document.getElementById("hell").innerHTML = "loding...."
+            setTimeout(() => {
+                userInterval = setInterval(() => {
+                    document.getElementById("hell").innerHTML = `now we are starting counting id "+${num}`
+                    num++
+                }, 1000);
+            }, 2000);
+
+            
+            function clr_btn() {
+                console.log("function clr_btn is running")
+                clearInterval(userInterval); 
+                document.getElementById("he").addEventListener('click',clear)
+                    }
+        }
+            
+    </script>
+
+    <h2 id="hell">hello</h2>
+    <button onclick="set_time()">start here</button>
+    <button onclick="clr_btn()">stop here</button>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h2 id="hel">hello world</h2>
+<h2 id="demo">hello world</h2>
+<button onclick="clearInterval(timming)">Stop number</button>
+<button onclick="clearInterval(myVar)">Stop time</button> -->
+
+<!-- <script>
+                let timming = setInterval(cool, 1000);
+            var numm = 0
+
+               function cool() {
+                    document.getElementById("hel").innerHTML = `now we are starting counting id "+${numm}`
+                    numm++
+                }
+            
+            let myVar = setInterval(myTimer, 1000);
+            function myTimer() {
+                const d = new Date();
+                document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+            }
+</script> -->
+</body>
+
+</html>

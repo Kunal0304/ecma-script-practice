@@ -1,0 +1,263 @@
+<script>
+  // this.objname ="the Export Object";
+  // console.log(this)
+  // const test ={
+
+  //   name :"kunal",
+    
+  //   func1:function() {
+  //     console.log('func1',this) 
+  //       var a=() => {
+  //     console.log('func3',this)
+  //   }
+  //   a()
+  //   },
+  //   func2:() => {
+  //     console.log('func2',this)
+  //   }
+  // }
+  
+    // test.func1()
+    // test.func2()
+
+  // function qq() {
+  //     console.log('func1',this) 
+  //       var a=() => {
+  //     console.log('func3',this)
+  //   }
+  //   a()
+  // }
+
+  // qq()
+
+
+//  var a=10
+//  console.log(this.a)
+//   function nam() {
+//  console.log(this.a) 
+
+//  function nn() {
+//  console.log(this.a,"fun1") 
+//  function ss() {
+//  console.log(this.a,"fun2") 
+   
+//  }
+//  ss()
+//  }
+//  nn()
+//  var q=() =>console.log(this.a,"aa")
+//  q()
+//   }
+//   var q=() =>{
+//  console.log(this.a)  
+//   }
+//   q()
+//   nam()
+// const collection=document.getElementsByClassName("ad")
+// collection[0].style.backgroundColor = "red";
+// document.getElementById("qq").style.backgroundColor="green"
+// document.querySelector(".ad").style.backgroundColor = "red";
+
+
+// dd=[1 ,2,5,3,6,9]
+// function x() {
+//   console.log("hello")
+//   for (var i = 0; i < dd.length; i++) {
+//       setTimeout(() => {
+//         console.log(i)
+//       }, 2000);
+//   }
+// }
+//   x();
+
+  // function x() {
+  // console.log("hello")
+  // for (var i = 0; i < 5; i++) {
+  //     function aa(p) {    
+  //     setTimeout(() => {
+  //       console.log(p)
+  //     }, 2000);
+
+  //   }
+  //   aa(i);
+  // }
+
+// }
+  // x();
+ 
+  // function y() {
+  //   var a=10
+  //   setTimeout(() => {
+  //    console.log(a)    
+  //   }, 2000);
+  //   a=100 
+  // }
+  // y()
+
+  // "use strict";  
+  // rr = 23; 
+  // console.log(rr);
+// var x;
+
+// console.log("42">"62")
+// console.log("986"<"985")
+
+//   
+
+// call
+// let obj={num:3}
+// let addnumbers= function(a,b,c){
+//   return this.num+a+b+c
+  
+  
+// }
+// // console.log(this.num,"aaa")
+// console.log(addnumbers.call(obj,10,20,30))
+/*********************************************************  */
+//apply 
+// let obj={num:3}
+// let addnumbers= function(a,b,c){
+//     return this.num+a+b+c
+
+// }
+// let arr=[1,2,3]
+// console.log(addnumbers.apply(obj,arr))
+/********************************************************** */
+//bind
+let obj={num:3}
+let addnumbers= function(a,b,c){
+    return this.num+a+b+c
+}
+let result = addnumbers.bind(obj)
+console.log(result(1,2,3))         
+//   function doSomething(){
+//      x = 33;
+//     console.log(x);
+//   var x;
+// }
+// doSomething()
+//   a=10
+//   console.log(a)
+//   var a
+var arr = new Array(5);
+     
+typeof arr;
+</script>
+<body>
+  <!-- <p class="ad">hello 01</p>
+  <p class="ad">hello 02</p>
+  <p class="ad">hello 03</p>
+  <p class="ad">hello 04</p>
+  <p class="qq">hello 05</p>
+  <p class="ad">hello 06</p>
+  <p class="ad">hello 07</p> -->
+  <!-- <p class="qq">hello 05</p> -->
+
+
+
+</body>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<!--  <p class="example">hello 01</p>
+<p class="example">hello 01</p>
+<p class="example">hello 01</p>
+<hr>
+<p class="qq">jjasdasjkdad</p>
+<p class="qq">jjasdasjkdad</p>
+<p class="qq">jjasdasjkdad</p> -->
+
+<script>
+
+  // var a=10
+  // let a=100
+
+  // {
+    // let a=1000
+//     var a=10000
+
+// console.log(a)
+// }       
+// console.log(a)
+  
+// var vv=document.querySelectorAll(".example");
+// vv[1].style.backgroundColor="blue";
+// var zz=document.getElementsByClassName("qq");
+// zz[1].style.backgroundColor="red"
+// const collection = document.getElementsByClassName("example color");
+// collection[2].style.backgroundColor = "red";
+
+
+// var a= "hello" + 9
+// console.log(a)
+
+// var a = "10"
+// var b =5
+// var c =a/b
+// console.log(c)
+// var x = 45;
+// // x="hello"
+//  var y=isNaN("asasdas")
+// console.log(y,"aaa")
+// var y = {};
+        
+// if(x) { console.log(x) } else{console.log("false")}  // The code inside this block will not run since the value of x is 0(Falsy)  
+        
+// if(y) { console.log(y) } else{console.log("false")}
+
+// (function (){
+// console.log("aaa")
+
+// })()
+
+// (function (){
+// console.log("bbb")
+
+// })()
+
+
+// var obj = {
+//     name:  "vivek",
+//     getName: function(){
+//     console.log(this.name);
+//   }
+        
+// }
+        
+// var getName = obj.getName;
+// console.log(getName(),"qq")
+        
+// var obj2 = {name:"akshay", getName };
+// obj2.getName();
+// obj.getName()    
+
+
+
+
+</script>  
+
+
+
+<!-- <script>  
+  const website="Javatpoint";  
+  let a=10
+  var b=20
+  function web()  
+  {  
+    console.log(this.website,"const");
+    console.log(this.a,"let")
+    console.log(this.b,"var")
+  }  
+  web();  
+  </script>  
+  <button onclick="web()"> clcick <menu></menu></button> -->
+
+</body>
+</html>
+
+
+
+
